@@ -1,6 +1,6 @@
 //** Custom Components */
 import GalleryCard from "./GalleryCard";
-import SkeletonLoader from "../../shared/loader/Skelton";
+import SkeletonLoader from "../../shared/loader/Skeleton";
 
 export default function GalleryList({ loading, photos }) {
   return (
