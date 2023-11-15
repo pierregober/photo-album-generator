@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap: location for the sitemap goes here
