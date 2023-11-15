@@ -19,6 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [photos, setPhotos] = useState([]);
 
+  // Capture the window size for mainly adjusting the drag and drop backend
   const { width } = useWindowSize();
   const isMobile = width <= 600;
 
@@ -41,9 +42,11 @@ export default function Home() {
     fetchPhotos();
   }, []);
 
+  //These are drag and drop actions that used throughout the application
   const actions = {
     onDrop: (photo) =>
       setSelectedPhotos((prevPhotos) => {
+        // Remove the photo if found in the selected photo array
         if (!prevPhotos.find((p) => p.id === photo.id)) {
           return [...prevPhotos, photo];
         }
@@ -68,6 +71,7 @@ export default function Home() {
     },
   };
 
+  // Grab the selected photos in LS
   useEffect(() => {
     const savedPhotos = JSON.parse(
       localStorage.getItem("selectedPhotos") || "[]",
@@ -75,6 +79,7 @@ export default function Home() {
     setSelectedPhotos(savedPhotos);
   }, []);
 
+  // Set the selection list to those photos array that was assigned above
   useEffect(() => {
     localStorage.setItem("selectedPhotos", JSON.stringify(selectedPhotos));
   }, [selectedPhotos]);

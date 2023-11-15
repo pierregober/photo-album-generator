@@ -17,6 +17,22 @@ a {
   text-decoration: none;
 }
 
+button.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+button.delete:hover {
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1350px;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -33,6 +49,14 @@ a {
 
 .gallery-container div img {
   object-fit: cover;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 .selection-container {
@@ -115,13 +139,6 @@ a {
   }
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  max-width: 1350px;
-}
-
 main {
   display: flex;
   height: 100vh;
@@ -155,21 +172,4 @@ main {
   50% {
     opacity: 0.5;
   }
-}
-
-button.delete {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-button.delete:hover {
-  cursor: pointer;
-}
-
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
 }
