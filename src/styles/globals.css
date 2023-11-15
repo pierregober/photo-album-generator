@@ -53,8 +53,11 @@ a {
   flex-direction: row;
   margin-bottom: auto;
   gap: 6px;
+}
+.selection-content-container .images div img {
   object-fit: cover;
 }
+
 .selection-content-container .list {
   width: 50%;
   font-size: 14px;
