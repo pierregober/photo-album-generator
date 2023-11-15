@@ -68,7 +68,7 @@ export default function App({ Component, pageProps }) {
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="/public/favicon.ico"
+          href="/static/favicon.ico"
         ></link>
       </Head>
       <Component previousPathname={previousPathname} {...pageProps} />
