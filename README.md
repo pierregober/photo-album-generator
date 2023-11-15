@@ -6,6 +6,8 @@ https://photo-album-generator.netlify.app
 
 ## About
 
+![Lighthouse Score](https://i.imgur.com/Diqplg2.png)
+
 A simple and user-friendly tool to create a photo album from Sling Academy Photo Repository
 
 Photo Album Generator made with ☕ & ❤️
