@@ -27,7 +27,7 @@ export default function Home() {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://api.slingacademy.com/v1/sample-data/photos?limit=20",
+          "https://api.slingacademy.com/v1/sample-data/photos?limit=100",
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
